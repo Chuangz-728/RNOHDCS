@@ -75,7 +75,7 @@ const OcrTest = () => {
                             {changeType !== 0 && <View>
                                 <Text style={{ color: '#00ff00', fontSize: 14 }}>原图如下：</Text>
                                 {changeType === 1 && <Image style={{ width: 'auto', height: 200 }} resizeMode={'contain'} source={{ uri: netImageUri }}></Image>}
-                                {changeType === 2 && <Image style={{ width: 'auto', height: 200 }} resizeMode={'contain'} source={require('./assets/ocr_test.jpg')}></Image>}
+                                {changeType === 2 && <Image style={{ width: 'auto', height: 200 }} resizeMode={'contain'} source={require('./ocr_test.jpg')}></Image>}
                             </View>}
                             {Array.isArray(result) && result?.length && <Text style={{ color: '#00ff00', fontSize: 14 }}>识别图如下：</Text>}
                         </View>
